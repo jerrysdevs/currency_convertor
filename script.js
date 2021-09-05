@@ -101,6 +101,7 @@ async function request() {
     let restxt = `${input2}`.toUpperCase();
     var result = await response.rates[value1]/ response.rates[value2];
     let result1 = await input3/result;
+    result1 = result1.toFixed(2);
     audio.innerHTML = `${restxt}  ${result1}`;
 }
 
